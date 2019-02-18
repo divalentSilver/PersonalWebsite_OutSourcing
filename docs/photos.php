@@ -9,12 +9,13 @@
 	<title>Jeonghyeon Joo | Media - Photos</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="">
-    <meta property="og:url" content="http://jeonghyeonjoo.com/">
-    <meta property="og:title" content="Jeonghyeon Joo | Media - Photos">
+    <meta name="description" content="Jeonghyeon Joo | Media - Photos">
+    <meta property="og:url" content="http://jeonghyeonjoo.com/photos.php">
+    <meta property="og:title" content="Jeonghyeon Joo">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/metaimg.png">
-    <meta property="og:description" content="Jeonghyeon Joo">
+    <meta property="og:description" content="Jeonghyeon Joo | Media - Photos">
+    <meta property="og:site_name" content="Jeonghyeon Joo">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 	<link rel="icon" href="images/favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" href="assets/css/main.css" />
