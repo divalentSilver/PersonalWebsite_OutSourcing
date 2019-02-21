@@ -9,6 +9,7 @@
 	<title>Jeonghyeon Joo | Contact</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="index,follow">
     <meta name="description" content="Jeonghyeon Joo | Contact">
     <meta property="og:url" content="http://jeonghyeonjoo.com/contact.php">
     <meta property="og:title" content="Jeonghyeon Joo">
@@ -18,6 +19,8 @@
     <meta property="og:site_name" content="Jeonghyeon Joo">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 	<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon_57.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon_114.png"/>
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -90,7 +93,8 @@
 									<h2>Contact</h2>
 								</header>
 								<section>
-									<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwV_90SpqPlW_fROJ33gZwE-0Damy36abw6Sb5l/exec">
+                                        <label class="sr-only">Keep this field blank</label>
+                                        <input id="honeypot" type="text" name="honeypot" value="" />
 										<div class="thankyou_message" style="display:none;">
 									      <h1>Thank you! Your message has been sent successfully.</h1>
 									    </div>
@@ -119,7 +123,7 @@
 																<i class="fa fa-spinner fa-spin"></i> Please wait...
 															</button>
 														</li>
-														<li><input type="reset" value="Clear Form" class="alt" /></li>
+														<li><button onclick="returnbutton()" type="reset" class="alt">Clear Form</button></li>
 													</ul>
 												</div>
 											</div>
@@ -140,10 +144,8 @@
 					<div class="column">
 						<!-- Copyright -->
 						<div class="copyright">
-							<p>
-								&copy; 2019 Jeonghyeon Joo.</br>
-								Designed by Kaeun Rhee with <a href="http://html5up.net">HTML5 UP</a>
-							</p>
+                            <p>&copy; 2019 Jeonghyeon Joo.</p>
+							<p>Designed by Kaeun Rhee with <a href="http://html5up.net">HTML5 UP</a></p>
 						</div>
 					</div>
 					<div class="column">
@@ -175,6 +177,14 @@
 			b4sending.style.display = "none";
 			var sending = document.getElementById("sending");
 			sending.style.display = "inline-block";
+		}
+        function returnbutton(){
+			var b4sending = document.getElementById("b4sending");
+			var sending = document.getElementById("sending");
+            if (sending.style.display === "inline-block"){
+                b4sending.style.display = "inline-block";
+                sending.style.display = "none";
+            }
 		}
 	</script>
 </body>

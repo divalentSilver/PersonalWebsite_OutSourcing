@@ -201,7 +201,7 @@ p, ul, ol, dl, table {
 }
 
 .row.repertoires p {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     text-align: left;
 }
 
@@ -1346,6 +1346,7 @@ section h3.current a {
 #footer .copyright {
     color: #525252;
     left: 0;
+    padding-top: 8px;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -1354,6 +1355,14 @@ section h3.current a {
 
 #navPanel, #titleBar {
     display: none;
+}
+
+#honeypot {
+  display: none;
+}
+
+#footer .copyright p {
+    margin-bottom: -0.5em;
 }
 
 /* Max-Large */
@@ -2008,7 +2017,7 @@ section h3.current a {
     }
 
     .row.repertoires p {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.3em;
     }
 
     /* Basic */
@@ -2840,6 +2849,10 @@ section h3.current a {
     .row.repertoires {
         margin-top: 20px;
         margin-left: -20px;
+    }
+
+    .row.repertoires.nocomposer{
+        margin-top: 10px !important;
     }
 
     .row.gtr-uniform {

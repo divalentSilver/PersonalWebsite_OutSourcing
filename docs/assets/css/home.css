@@ -1077,6 +1077,7 @@ ul.menu li:first-child {
 #footer .copyright {
     color: #BEBEBE;
     left: 0;
+    padding-top: 8px;
     margin-left: 150px;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
@@ -1086,6 +1087,10 @@ ul.menu li:first-child {
 
 #navPanel, #titleBar {
     display: none;
+}
+
+#footer .copyright p {
+    margin-bottom: -0.5em;
 }
 
 /* Max-Large */
