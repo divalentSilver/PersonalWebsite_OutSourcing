@@ -88,7 +88,7 @@
 			<!-- Slideshow container -->
 			<div class="slideshow-container">
 				<?php
-					$sql_slideimgs = "SELECT * FROM slideimgs ORDER BY id ASC;";
+					$sql_slideimgs = "SELECT * FROM slideimgs ORDER BY seq ASC;";
 					$result_slideimgs = mysqli_query($conn, $sql_slideimgs);
 					while($row = mysqli_fetch_array($result_slideimgs)){
 						echo "<div class='mySlides fade'>";

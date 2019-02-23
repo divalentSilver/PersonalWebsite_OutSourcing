@@ -170,7 +170,9 @@
 											echo "<p>";
 											echo "<b style='font-size:110%;'>{$row['text1']}</b></br>";
 											if ($row['text2']) echo "{$row['text2']}</br>";
-											if ($row['place']) echo "@ <a href='{$row['placelink']}'>{$row['place']}</a>";
+											if ($row['place']) echo "@ {$row['place']}</br>";
+                                            if ($row['sponsor']) echo "Sponsored by {$row['sponsor']}</br>";
+                                            if ($row['host']) echo "Hosted by {$row['host']}";
 											echo "</p>";
 										}
 									 ?>

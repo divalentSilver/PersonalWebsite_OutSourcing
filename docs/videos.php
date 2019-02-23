@@ -104,14 +104,23 @@
 								</header>
 								<section>
 									<?php
-										$sql_videos = "SELECT * FROM media_videos ORDER BY id ASC;";
+										$sql_videos = "SELECT * FROM media_videos ORDER BY seq ASC;";
 										$result_videos = mysqli_query($conn, $sql_videos);
 										while($row = mysqli_fetch_array($result_videos)){
 											if($row['id'] % 2 == 1){
-												echo "<div class='row' style='padding-top: 40px;'>";
+                                                if($row['id'] == 1){
+                                                    echo "<div class='row' style='padding-top: 0px;'>";
+                                                }
+                                                else{
+    												echo "<div class='row' style='padding-top: 40px;'>";
+                                                }
 											}
 											echo "<div class='col-6 col-12-medium'>";
+                                            echo "<div style='position:relative;height:60px;'>";
+                                            echo "<div style='position:absolute;bottom:0;'>";
                                             echo "<b>({$row['id']}.) {$row['caption']}</b>";
+                                            echo "</div>";
+                                            echo "</div>";
 											echo "<div style='position:relative;height:0;padding-bottom:56.25%;margin-top:10px;'>";
 											echo "<iframe src={$row['src']}?controls=2&showinfo=0&rel=0&modestbranding=1' style='position:absolute;width:100%;height:100%;left:0' width='640' height='360' frameborder='0' allow='accelerometer; autoplay;' allowfullscreen>";
 											echo "</iframe>";

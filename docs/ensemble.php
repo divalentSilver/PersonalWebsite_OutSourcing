@@ -105,7 +105,7 @@
 								</header>
 								<section>
 									<?php
-										$sql_ensemble = "SELECT * FROM rptr_ensemble ORDER BY id ASC;";
+										$sql_ensemble = "SELECT * FROM rptr_ensemble ORDER BY seq ASC;";
 										$result_ensemble = mysqli_query($conn, $sql_ensemble);
 										while($row = mysqli_fetch_array($result_ensemble)){
                                             if($row['composer']){

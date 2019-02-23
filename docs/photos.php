@@ -104,7 +104,7 @@
 								</header>
 								<section>
 									<?php
-										$sql_photos = "SELECT * FROM media_photos ORDER BY id ASC;";
+										$sql_photos = "SELECT * FROM media_photos ORDER BY seq ASC;";
 										$result_photos = mysqli_query($conn, $sql_photos);
 										while($row = mysqli_fetch_array($result_photos)){
 											if($row['id'] % 3 == 1){

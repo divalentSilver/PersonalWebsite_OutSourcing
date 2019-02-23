@@ -94,7 +94,7 @@
 								</header>
 								<section>
 									<?php
-										$sql_about = "SELECT * FROM about ORDER BY id ASC;";
+										$sql_about = "SELECT * FROM about ORDER BY seq ASC;";
 										$result_about = mysqli_query($conn, $sql_about);
 										while($row = mysqli_fetch_array($result_about)){
 											echo "<p>";

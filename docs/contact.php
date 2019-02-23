@@ -93,6 +93,7 @@
 									<h2>Contact</h2>
 								</header>
 								<section>
+									<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwpxVXzxs6D78woOLZepObuf4OQat67xNnIQDIh72CwgvuZsa4/exec">
                                         <label class="sr-only">Keep this field blank</label>
                                         <input id="honeypot" type="text" name="honeypot" value="" />
 										<div class="thankyou_message" style="display:none;">

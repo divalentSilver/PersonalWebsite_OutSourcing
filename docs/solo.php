@@ -105,7 +105,7 @@
 								</header>
 								<section>
 									<?php
-										$sql_solo = "SELECT * FROM rptr_solo ORDER BY id ASC;";
+										$sql_solo = "SELECT * FROM rptr_solo ORDER BY seq ASC;";
 										$result_solo = mysqli_query($conn, $sql_solo);
 										while($row = mysqli_fetch_array($result_solo)){
                                             if($row['composer']){
